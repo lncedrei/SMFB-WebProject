@@ -1,0 +1,331 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: justify;
+}
+
+nav h1 {
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #9B0F06, #9b10065b, #9B0F06);
+    backdrop-filter: blur(10px);
+}
+
+.btn, .btn-secondary {
+    background-color: #740b03b0;
+    border-color: white;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #740a03;
+    border-color: white;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+/*------------------------------------*/
+.Advert {
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    Overflow: hidden;
+}
+
+#carouselWithInterval, .carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*------------------------------------*/
+
+.Introduction {
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    align-content: center;
+    justify-content: center;
+    background-color: #c5c5c5;
+    border-radius: 25px;
+    display: grid;
+    margin: 50px auto;
+    padding: 50px 100px 50px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"IntroImg IntroImg2" "IntroDesc IntroDesc";
+}
+
+#IntroImg{grid-area: IntroImg;}
+#IntroImg2{grid-area: IntroImg2;}
+#IntroDesc{grid-area: IntroDesc;}
+
+#IntroDesc h1 {
+    font-weight: 900;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+ #IntroImg img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain; 
+    }
+    #IntroImg2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    }
+
+#learnBtn {
+    background-color: #740a03;
+}
+
+#learnBtn:Hover {
+    background-color: black;
+}
+
+/*------------------------------------*/
+.prodHome{
+    align-content: center;
+    justify-content: center;
+    height: auto;
+}
+.ProdHome h1{
+    font-weight: 900;
+    text-align: center;
+}
+
+.ProdHome p {
+    text-align: center;
+}
+
+.ProdHomeImg {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 15px;
+    grid-template-areas: "PH1" 
+                         "PH2" 
+                         "PH3" 
+                         "PH4" 
+                         "PH5" 
+                         "PH6";
+    }
+
+#ProdH1{grid-area: PH1;}
+#ProdH2{grid-area: PH2;}
+#ProdH3{grid-area: PH3;}
+#ProdH4{grid-area: PH4;}
+#ProdH5{grid-area: PH5;}
+#ProdH6{grid-area: PH6;}
+
+.ProdHomeImg img {
+    height: 200px; 
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ProdHomeImg img:hover {
+    transform: scale(1.05);
+}
+
+#prodMore, #ManuMore  {
+    margin: 20px 20px 0 20px;
+   
+}
+
+#prodMoreBtn, #ManuMoreBtn {
+    background-color: #740a03;
+    text-align: center;
+    display: flex;
+    width: auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#prodMoreBtn:hover, #ManuMoreBtn:hover {
+    background-color: black;
+}
+/*------------------------------------*/
+
+.ManuHome{
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.ManuHome h1{
+    font-weight: 900;
+    text-align: center;
+}
+
+.ManuHome p {
+    text-align: center;
+}
+
+.ManuHomeImg {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+
+    grid-template-columns: repeat(1, 150px);
+    grid-template-rows: repeat(1, 100px);
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    grid-template-areas: "MH1 MH1 MH2" 
+                         "MH1 MH1 MH2";
+    }
+
+#ManuH1{grid-area: MH1;}
+#ManuH2{grid-area: MH2;}
+
+
+.ManuHomeImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ManuHomeImg img:hover {
+    transform: scale(1.05);
+}
+
+
+/*------------------------------------*/
+footer {
+    background: linear-gradient(90deg, #640a03, #9B0F06, #640a03);
+    font-size: 0.7em;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+/*------------------------------------*/
+@media (min-width: 768px) {
+    nav h1 {
+    font-size: 1rem;
+    }
+    body {
+    font-size: 1.2rem;
+
+    }
+  #IntroImg img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain; 
+    }
+    #IntroImg2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+ 
+    
+} 
+@media (min-width: 1025px) {
+
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    body {
+    font-size: 1.4rem;
+    }
+  
+    .Advert {
+    width: 100%;
+    height: 900px;
+    Overflow: hidden;
+}
+    .Introduction {
+        border-radius: 2.5rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:"IntroImg IntroDesc" "IntroImg2 IntroDesc";
+    }
+
+    #IntroDesc {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    #IntroDesc h1{
+        font-size: 3rem;
+        text-align: left;
+    }
+    #IntroDesc p{
+        font-size: clamp(1rem, 1.2vw, 2rem);
+    }
+
+    #IntroImg{margin:25px;}
+
+    #IntroImg img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain; 
+    }
+    #IntroImg2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+/*--------------------------------*/
+    .ProdHomeImg {
+        display: grid;
+        margin: 0 auto;
+        max-width: fit-content;
+        
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        grid-template-areas: "PH1 PH2 PH3" "PH4 PH5 PH6";
+        }
+
+    .ProdHomeImg img {
+        height: 280px; 
+    }
+
+    #prodMoreBtn, #ManuMoreBtn {
+    width: auto;
+    max-width: 1700px;
+    margin: 0 auto;
+    }    
+
+    .ManuHomeImg {
+    display: grid;
+    margin: 0 auto;
+ 
+    max-width: 1750px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    grid-template-areas: "MH1 MH1 MH2" 
+                         "MH1 MH1 MH2";
+    }
+
+/*--------------------------------*/
+}
