@@ -1,0 +1,127 @@
+Section{
+    padding: 100px;
+    margin: 0px auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.SMAbout{
+    max-width: 100%;
+    max-height: fit-content;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(7, 7, 7, 0.705), rgba(255, 255, 255, 0.185)), url("SMBuilding.jpg");
+}
+
+.SMCon, .SMFBCon {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    }
+
+.SMCon{grid-template-areas: "SMD SML";}
+.SMFBCon{grid-template-areas: "SML SMD";}
+
+.SMLogo {grid-area: SML;}
+.SMDesc {grid-area: SMD;}
+
+.SMFBLogo {grid-area: SML;}
+.SMFBDesc {grid-area: SMD;}
+
+.SMFBAbout {
+    display: grid;
+    max-width: 100%;
+    max-height: fit-content;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.705)), url("SMFBFact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.SMLogo, .SMFBLogo{
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.301));
+    backdrop-filter: blur(8px);
+    border-radius: 2em;
+    padding: 50px;
+}
+
+.SMFBLogo, .SMFBDesc {
+    margin-left: 120px;
+}
+
+.SMLogo img, .SMFBLogo img {
+    width: 400px;
+    height: 400px;
+    margin-top: 80px;
+    align-content: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.SMLogo img:hover, .SMFBLogo img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: white;
+    backdrop-filter: blur(5px);
+    font-size: 16px;
+    height: 700px;
+    width: 1200px;
+    max-width: 90%; 
+    border-radius: 2em;
+}
+
+.card-header{
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+}
+
+.card-text{
+    padding: 0 50px;
+}
+
+.card-text::first-letter{
+    margin-left: 50px;
+}
+
+/**-------------------------------------*/
+
+.Office{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1900px;
+    gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "ODesc ODesc OMap OPic ";
+}
+
+.OfficeDesc {grid-area: ODesc;}
+.OfficeMap {grid-area: OMap;}
+.OfficePic {grid-area: OPic;}
+
+.Office Img {
+    object-fit: cover;
+    width: 500px;
+    height: 400px;
+    margin: 0
+}
+
+.Office h1 {
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.Office p {
+    font-size: 24px;
+}
