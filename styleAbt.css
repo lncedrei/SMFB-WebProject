@@ -1,42 +1,46 @@
 Section{
-    padding: 100px;
+    padding: 40px 10px;
     margin: 0px auto;
     align-content: center;
     justify-content: center;
 }
 
 .SMAbout{
+    width: 100%;
     max-width: 100%;
     max-height: fit-content;
-    align-items: center;
-    background-image: linear-gradient(90deg, rgba(7, 7, 7, 0.705), rgba(255, 255, 255, 0.185)), url("SMBuilding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.219)), url("SMBuilding.jpg");
 }
 
 .SMCon, .SMFBCon {
     display: grid;
-    padding: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
+    max-width: 500px;
+    gap: 30px;
+    margin: 50px auto;
     justify-content: center;
     align-content: center;
     }
 
-.SMCon{grid-template-areas: "SMD SML";}
-.SMFBCon{grid-template-areas: "SML SMD";}
+.SMCon{grid-template-areas: "SML" "SMD";}
+.SMFBCon{grid-template-areas: "SMFBL" "SMFBD";}
 
 .SMLogo {grid-area: SML;}
 .SMDesc {grid-area: SMD;}
 
-.SMFBLogo {grid-area: SML;}
-.SMFBDesc {grid-area: SMD;}
+.SMFBLogo {grid-area: SMFBL;}
+.SMFBDesc {grid-area: SMFBD;}
 
 .SMFBAbout {
     display: grid;
     max-width: 100%;
     max-height: fit-content;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.705)), url("SMFBFact.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.705)), url("SMFBFact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,18 +51,22 @@ Section{
     background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.301));
     backdrop-filter: blur(8px);
     border-radius: 2em;
-    padding: 50px;
-}
-
-.SMFBLogo, .SMFBDesc {
-    margin-left: 120px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .SMLogo img, .SMFBLogo img {
-    width: 400px;
-    height: 400px;
-    margin-top: 80px;
+    width: 200px;
+    height: 200px;
     align-content: center;
+    object-fit: contain;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -69,21 +77,27 @@ Section{
 .card {
     background-color: white;
     backdrop-filter: blur(5px);
-    font-size: 16px;
-    height: 700px;
-    width: 1200px;
-    max-width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding: 40px 0px;
     border-radius: 2em;
+    text-align: justify;
 }
 
 .card-header{
     font-weight: 900;
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .card-text{
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .card-text::first-letter{
@@ -100,28 +114,177 @@ Section{
     width: 100%;
     max-width: 1900px;
     gap: 20px;
-    grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: "ODesc ODesc OMap OPic ";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "ODesc" "OMap" "OPic";
 }
 
 .OfficeDesc {grid-area: ODesc;}
 .OfficeMap {grid-area: OMap;}
 .OfficePic {grid-area: OPic;}
 
-.Office Img {
+.OfficeMap Img, .OfficePic Img {
     object-fit: cover;
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 200px;
     margin: 0
 }
 
 .Office h1 {
     margin-top: 80px;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 900;
+    text-align: center;
 }
 
 .Office p {
-    font-size: 24px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*---------------------------------*/
+@media (min-width: 768px) {
+
+    .SMCon, .SMFBCon {
+    max-width: fit-content;
+    }
+    .Office{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "ODesc ODesc" "OMap OPic ";
+    }
+
+    .Office img {
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .SMAbout{
+    padding: 150px 0px;
+    height: 950px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.219)), url("SMBuilding.jpg");
+    max-width: 100%;
+    max-height: fit-content;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .SMFBAbout {
+    padding: 150px 0px;
+    height: 950px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.808)), url("SMFBFact.jpg");
+    display: grid;
+    max-width: 100%;
+    max-height: fit-content;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .SMCon, .SMFBCon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    max-width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    }
+
+    .SMFBCon{
+        margin-top: 700px;
+    }
+
+    .SMCon{grid-template-areas: "SMD SML";}
+    .SMFBCon{grid-template-areas: "SMFBL SMFBD";}
+
+    .SMLogo, .SMFBLogo{
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.301));
+    backdrop-filter: blur(8px);
+    border-radius: 2em;
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    }
+
+    .SMLogo img, .SMFBLogo img {
+        width: 400px;
+        height: 400px;
+        align-content: center;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .SMLogo img:hover, .SMFBLogo img:hover {
+        transform: scale(1.1);
+    }
+
+    .card {
+        background-color: white;
+        backdrop-filter: blur(5px);
+        font-size: clamp(2px, 1vw, 16px);
+        height: auto;
+        width: auto;
+        max-width: 1500px; 
+        border-radius: 2em;
+    }
+
+    .card-header{
+        font-weight: 900;
+        text-align: center;
+        font-size: clamp(20px, 2vw, 50px);
+    }
+
+    .card-text{
+        padding: 0 clamp(14px, 2vw, 50px);
+    }
+
+    .card-text::first-letter{
+        margin-left: 50px;
+    }
+
+    .Office{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1900px;
+    gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-areas: "ODesc OMap OPic ";
+}
+
+    .OfficeDesc {grid-area: ODesc;}
+    .OfficeMap {grid-area: OMap;}
+    .OfficePic {grid-area: OPic;}
+
+    .OfficeMap Img, .OfficePic Img{
+        object-fit: cover;
+        width: 500px;
+        height: 400px;
+        margin: 0
+    }
+
+    .Office h1 {
+        margin-top: 80px;
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .Office p {
+        font-size: 24px;
+    }
+
+
 }

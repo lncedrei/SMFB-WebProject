@@ -11,7 +11,7 @@
     <title>SMFB | ABOUT</title>
 </head>
 <body>
-     <header>
+      <header>
             <nav class="navbar navbar-dark p-3 fixed-top w-100">
                  <div class="container-fluid d-flex align-items-center justify-content-between"></div>
 
@@ -110,10 +110,16 @@
                 <p>Mandaluyong, Metro Manila, Philippines.</p>
             </div>
             <div class="OfficeMap">
-                <img src="OfficeMap.jpg" usemap="#OfficeMapping" alt="Office Map">
+                <img src="OfficeMap.jpg" class="d-none d-lg-block" usemap="#OfficeMappingDesk" alt="Office Map">
+                <img src="OfficeMap.jpg" class="d-block d-lg-none"usemap="#OfficeMappingMobile" alt="Office Map">
 
-                <map name = "OfficeMapping">
+                <map name = "OfficeMappingDesk">
                     <area shape="rect" coords="197,151,304,251" alt="Main Office" 
+                    href="https://maps.app.goo.gl/DWHHuwukPR38Y1dN6" target="_blank">
+                </map>
+
+                 <map name = "OfficeMappingMobile">
+                    <area shape="rect" coords="138,76,213,126" alt="Main Office" 
                     href="https://maps.app.goo.gl/DWHHuwukPR38Y1dN6" target="_blank">
                 </map>
             </div>
