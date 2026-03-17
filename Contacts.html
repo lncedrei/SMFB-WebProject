@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link href="StyleContact.css" rel="stylesheet">
     <title>San Miguel Food and Beverages, Inc.</title>
 </head>
 <body>
@@ -43,13 +44,70 @@
 
     <main>
         <!-- SHORT INTRODUCTION-->
-        <section> 
+        <section class="Contact"> 
+            <div id="ContactUs"><h1>CONTACT US</h1></div>
+            <div class="MessageForm">
+                <label for="firstName" class="form-label">FIRST NAME</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                <label for="lastName" class="form-label">LAST NAME</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="phoneNumber" class="form-label">PHONE NUMBER</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="+63 0917-XXX-XXXX">
+                <label for="message" class="form-label">MESSAGE</label>
+                <textarea class="form-control" class="form-control" id="message"></textarea>
+                <button type="submit" form="form1" id="submitMessage">SUBMIT</button>
+            </div>
             
         </section>
 
         <!-- PRODUCTS IMAGES-->
         <section> 
-            
+            <div id="inquiries" class="text-light">For further inquiries, you may also reach out to the following departments:</div>
+            <div class="text-light">
+                <table class="ContactsTable1">
+                    <tr>
+                        <th>Department</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td>Customer Care</td>
+                        <td>customercaresmfb@example.com.ph</td>
+                        <td>+63 917-XXX-XXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Investor Relations</td>
+                        <td>investrelsmfb@example.com.ph</td>
+                        <td>+63 917-XXX-XXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Security Office</td>
+                        <td>securityofcsmfb@example.com.ph</td>
+                        <td>+63 917-XXX-XXXX</td>
+                    </tr>
+                </table>
+            </div>
+             <div id="inquiries" class="text-light">For technical issues or website-related concerns, please contact the Lead Developer:</div>
+                <div class="text-light">
+                    <table class="ContactsTable2">
+                
+                    <tr>
+                        <th>Department</th>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td>IT DEPARTMENT</td>
+                        <td>Lance Andrei Mendoza</td>
+                        <td>lamendozaph@gmail.com</td>
+                        <td>+63 976 567 7047</td>
+                    </tr>
+                </table>
+                <div id="disclaimer">*Non-official site. Created solely for academic requirements. All rights belong San Miguel Corp.</div>
+            </div>
         </section>
 
         <!-- MANUFACTURING IMAGES-->
@@ -58,10 +116,11 @@
         </section>
     </main>
 
-    <footer class="text-light p-5">
+    <footer class="text-light p-3 p-lg-5">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
             <h2 class="fw-bolder">SAN MIGUEL FOOD AND BEVERAGES, INC.</h2>
+            <p class="fw-bolder">UNOFFICIAL WEBSITE</p>
             <p class="fw-bolder">DEVELOPED BY: LANCE ANDREI MENDOZA</p>
             </div>
         <ul class="list-unstyled d-flex mb-0 list-unstyled d-flex flex-column flex-lg-row mb-0">

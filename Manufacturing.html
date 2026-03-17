@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link href="StyleManu.css" rel="stylesheet">
     <title>San Miguel Food and Beverages, Inc.</title>
 </head>
 <body>
-    <header>
+     <header>
             <nav class="navbar navbar-dark p-3 fixed-top w-100">
-                 <div class="container-fluid d-flex justify-content-between text-center text-lg-start flex-grow-1 flex-lg-grow-0"></div>
+                 <div class="container-fluid d-flex align-items-center justify-content-between"></div>
 
-                 <h1 class="mb-0 fw-bolder text-light">SAN MIGUEL FOOD AND BEVERAGES</h1>
+                <h1 class="mb-0 ms-sm-1 ms-md-4 fw-bolder text-light">SAN MIGUEL FOOD AND BEVERAGES</h1>
         
         <!-- THIS DROPDOWN MENU FOR NAVBAR IS HIDDEN IN DESKTOP MODE-->
-        <div class="d-block dropdown d-lg-none">
+        <div class="d-block d-lg-none dropdown me-sm-1 me-md-5">
         <button class="btn btn-secondary dropdown-toggle py-1 px-3 fs-6 fw-bolder" type="button" data-bs-toggle="dropdown">
             MENU
         </button>
 
         <ul class="dropdown-menu dropdown-menu-end"> <!-- THIS IS FOR MOBILE AND TABLET ONLY-->
-            <li><a class="dropdown-item p-3 fw-bolder " href="Index.html">HOME</a></li>
+            <li><a class="dropdown-item p-3 fw-bolder" href="Index.html">HOME</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="About.html">ABOUT</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="Products.html">PRODUCTS</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="Manufacturing.html">MANUFACTURING</a></li>
@@ -43,25 +44,52 @@
 
     <main>
         <!-- SHORT INTRODUCTION-->
-        <section> 
-            
+        <section class="CollageManuPic"> 
+            <div id="ManuPic1"><img src="ManuPic1.jpg">
+            </div>
+            <div id="ManuPic2"><img src="ManuPic2.jpg">
+            </div>
+            <div id="ManuPic3"><img src="ManuPic3.jpg">
+            </div>
+            <div id="ManuPic4"><img src="ManuPic4.png">
+            </div>
+            <div id="ManuPic5"><img src="ManuPic5.png">
+            </div>
         </section>
 
         <!-- PRODUCTS IMAGES-->
-        <section> 
-            
+        <section class="AboutManu"> 
+            <h1 id="ManuTitle">MANUFACTURING</h1>
+            <div class="ManuDesc">
+            <p>Through its three business segments in food, beer, and beverages, San Miguel Food and Beverage, Inc. is a leading company in the food industry in the Philippines due to its array of leading brands in the food sector.
+            The business ensures that every product meets international quality standards through the integration of modern manufacturing technology and environmentally friendly practices in its entire business operations.
+            The organization has several sectors to offer daily services to millions of Filipinos while developing a strong supply chain system that connects local retail distribution centers and agricultural operations. 
+            </p>
+
+            <p> The Food Division is under the operations of San Miguel Foods for providing premium quality dairy products and processed meats and poultry through its state-of-the-art farm-to-fork system. 
+            This division is focused on two major objectives, which include the formulation of nutritional fortifications and ensuring food safety through FSSC 22000 and ISO certification standards. 
+            The business ensures an uninterrupted and consistent food supply chain that prioritizes the health and well-being of consumers by covering the entire production life cycle, which includes animal feeds and breeding. 
+            </p>
+
+            <p> Beverage divisions of San Miguel Brewery, Inc. and Ginebra San Miguel operate as extensions of the food business through the implementation of advanced brewing and distillation technologies, which are used to sustain the leadership of the company in the market. 
+            The divisions manufacture famous products like San Miguel Beer, which are recognized internationally through the implementation of traditional brewing processes in combination with advanced automated systems for bottling the beer. San Miguel Food and Beverage, Inc.
+            continues to achieve its basic goal of “nourishing and nurturing lives” through the implementation of superior manufacturing processes in the market. 
+            </p>
+            </div>
+
         </section>
 
         <!-- MANUFACTURING IMAGES-->
-        <section> 
-            
+        <section class="VideoManu"> 
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pu8hblbwFiY?si=ljIfo1THa494fWxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
 
-    <footer class="text-light p-5">
+    <footer class="text-light p-3 p-lg-5">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
             <h2 class="fw-bolder">SAN MIGUEL FOOD AND BEVERAGES, INC.</h2>
+            <p class="fw-bolder">UNOFFICIAL WEBSITE</p>
             <p class="fw-bolder">DEVELOPED BY: LANCE ANDREI MENDOZA</p>
             </div>
         <ul class="list-unstyled d-flex mb-0 list-unstyled d-flex flex-column flex-lg-row mb-0">
