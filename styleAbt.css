@@ -201,7 +201,7 @@ Section{
     }
 
     .SMFBCon{
-        margin-top: 700px;
+        margin-top: 600px;
     }
 
     .SMCon{grid-template-areas: "SMD SML";}
@@ -254,8 +254,7 @@ Section{
 
     .Office{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    
     margin: 0 auto;
     width: 95%;
     max-width: 1900px;

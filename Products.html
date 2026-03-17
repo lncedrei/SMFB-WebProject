@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link href="styleProd.css" rel="stylesheet">
     <title>San Miguel Food and Beverages, Inc.</title>
 </head>
 <body>
-    <header>
+     <header>
             <nav class="navbar navbar-dark p-3 fixed-top w-100">
-                 <div class="container-fluid d-flex justify-content-between text-center text-lg-start flex-grow-1 flex-lg-grow-0"></div>
+                 <div class="container-fluid d-flex align-items-center justify-content-between"></div>
 
-                 <h1 class="mb-0 fw-bolder text-light">SAN MIGUEL FOOD AND BEVERAGES</h1>
+                <h1 class="mb-0 ms-sm-1 ms-md-4 fw-bolder text-light">SAN MIGUEL FOOD AND BEVERAGES</h1>
+        
 
-        <div class="d-block dropdown d-lg-none">
+        <!-- THIS DROPDOWN MENU FOR NAVBAR IS HIDDEN IN DESKTOP MODE-->
+        <div class="d-block d-lg-none dropdown me-sm-1 me-md-5">
         <button class="btn btn-secondary dropdown-toggle py-1 px-3 fs-6 fw-bolder" type="button" data-bs-toggle="dropdown">
             MENU
         </button>
 
         <ul class="dropdown-menu dropdown-menu-end"> <!-- THIS IS FOR MOBILE AND TABLET ONLY-->
-            <li><a class="dropdown-item p-3 fw-bolder " href="Index.html">HOME</a></li>
+            <li><a class="dropdown-item p-3 fw-bolder" href="Index.html">HOME</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="About.html">ABOUT</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="Products.html">PRODUCTS</a></li>
             <li><a class="dropdown-item p-3 fw-bolder" href="Manufacturing.html">MANUFACTURING</a></li>
@@ -41,39 +44,304 @@
     </header>
 
     <main>     
-        <!-- SHORT INTRODUCTION-->
-        <section> 
-            
+        <section class="Advert"> 
+                <div id="carouselWithInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                <img src="ProdH3.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                <img src="ProdH4.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                <img src="ProdH6.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithInterval" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithInterval" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+            </div>
         </section>
 
-        <!-- PRODUCTS IMAGES-->
+
+        <!-- FOOD PRODUCTS-->
         <section> 
-            
+            <div class="ProdHead">
+            <div class="ProdTitle">FOOD PRODUCTS</div>
+            <input id="SearchBar" type="text" placeholder="Search..." >
+            </div>
+            <div Id="Prodlist">
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd1.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS TENDER JUICY HOTDOG</h5>
+                    <p class="card-text">Made with high-quality ingredients that made the hotdog incredibly juicy and soft.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd2.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS BEEF TAPA</h5>
+                    <p class="card-text">Tender meat that has been specially marinated to highlight its meaty-tender goodness is used to make it.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd3.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS CHICKEN BREAST NUGGETS</h5>
+                    <p class="card-text">formed cube-shaped chicken nuggets coated with orange breadcrumbs, also made with high-quality ingredients that made the nugget incredibly juicy and tender.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd4.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS CORNED BEEF</h5>
+                    <p class="card-text">Enjoy the savory, rich flavor. Made from 100% pure beef.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd5.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA WHOLE CHICKEN</h5>
+                    <p class="card-text">a premium, fresh chicken choice with a focus on natural raising practices.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd6.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA LONGANISA</h5>
+                    <p class="card-text">A traditional Filipino breakfast dish made with ground pork and garlic.  with a delectable blend of garlicky, savory, and sweet flavors.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd7.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA CHEEZEE CHEDDAR SPREAD</h5>
+                    <p class="card-text">High-quality cheddar cheese and milk solids are used to make this pasteurized processed filled cheese spread.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd8.png" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA CREAM CHEESE</h5>
+                    <p class="card-text">has a creamy texture that adds a delightfully decadent touch to your favorite foods and desserts.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd9.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">STAR CORNED BEEF</h5>
+                    <p class="card-text">ready-to-eat corned beef straight out of the can or in your favorite recipes.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd10.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">STAR MARGARINE CLASSIC</h5>
+                    <p class="card-text">Non-refrigerated margarine made from a special blend of refined oils.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd11.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS FIESTA HAM</h5>
+                    <p class="card-text">Savor the flavorful and satisfying flavor. with the ideal balance of salty and sweet flavors.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="FoodProd12.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">PUREFOODS PINOY BBQ ALA LIEMPO</h5>
+                    <p class="card-text">Taste the ready-made Pinoy BBQ ala Liempo, which has a tender texture and a smoky flavor.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <!-- MANUFACTURING IMAGES-->
+        <!-- BEVERAGES IMAGES-->
         <section> 
+            <div class="ProdHead">
+            <div class="ProdTitle">ALCOHOLIC BEVERAGES<p>18+ | DRINK RESPONSIBLY</p></div>
+            </div>
+            <div Id="Prodlist">
+            <div class="col">
+                <div class="card">
+                <img src="BevProd1.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">SAN MIGUEL PALE PILSEN</h5>
+                    <p class="card-text">A pale golden pilsner lager made in the European style, this beer is well-balanced and has a rich, full-bodied flavor and attractive scent.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="BevProd2.png" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">SAN MIG LIGHT</h5>
+                    <p class="card-text">It is a well-liked option for anyone looking for a lighter beer experience without compromising flavor because of its crisp, refreshing flavor and lower calorie count.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="BevProd3.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">SAN MIGUEL FLAVOURED BEER</h5>
+                    <p class="card-text">Light, smooth, and easy to drink, this beer has well-balanced fruity flavors.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            </div>
             
+            <div class="ProdHead">
+            <div class="ProdTitle">NON-ALCOHOLIC BEVERAGES</div>
+            </div>
+            <div Id="Prodlist">
+            <div class="col">
+                <div class="card">
+                <img src="BevProd4.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA CHOCOLAIT</h5>
+                    <p class="card-text">Magnolia's thick and creamy chocolate-flavored beverage is perfect for a delightful break.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="BevProd5.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA FRESH MILK</h5>
+                    <p class="card-text">Pure, Fresh, creamy, and increadibly nutritious straight from the source.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="BevProd6.jpg" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                    <h5 class="card-title">MAGNOLIA HEALTHTEA</h5>
+                    <p class="card-text">is nutritious and loaded with natural antioxidants. With three available flavors: Apple, Lemon, and Mango.</p>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- LEARN MORE-->
+        <section> 
+            <div class="position-relative">
+            <div class="dropdown mx-5">
+            <button id="dropdownMart" class="btn btn-primary dropdown-toggle w-100 p-4" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                WHERE TO PURCHASE?
+            </button>
+            <ul class="dropdown-menu w-100 position-static text-center" aria-labelledby="dropdownMenuButton">
+            <div Id="Prodlist">
+            <div class="col">
+                <div class="card-mart" class="d-flex flex-wrap justify-content-around">
+                <a href="https://www.sanmiguelmart.ph/" target="_blank"><img src="SanMigMart.png" class="card-img-top" alt="card-grid-image"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-mart">
+                <a href="https://www.lazada.com.ph/" target="_blank"><img src="LazMart.png" class="card-img-top" alt="card-grid-image"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-mart">
+                <a href="https://shopee.ph/" target="_blank"><img src="ShopeeMart.png" class="card-img-top" alt="card-grid-image"></a>
+                </div>
+            </div>
+        </div>
+             </ul>
+        </div>
+            </div>
         </section>
     </main>
 
-    <footer class="text-light p-5">
+   <footer class="text-light p-5">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
             <h2 class="fw-bolder">SAN MIGUEL FOOD AND BEVERAGES, INC.</h2>
             <p class="fw-bolder">DEVELOPED BY: LANCE ANDREI MENDOZA</p>
+            <p class="fw-bolder">UNOFFICIAL WEBSITE</p>
             </div>
-        <ul class="list-unstyled d-flex mb-0 list-unstyled d-flex flex-column flex-lg-row mb-0">
-            <li class="ms-3 mb-md-0 me-md-3"><a class="text-light text-decoration-none" href="Index.html">HOME</a></li>
-            <li class="ms-3 mb-md-0 me-md-3"><a class="text-light text-decoration-none" href="About.html">ABOUT</a></li>
-            <li class="ms-3 mb-md-0 me-md-3"><a class="text-light text-decoration-none" href="Products.html">PRODUCTS</a></li>
-            <li class="ms-3 mb-md-0 me-md-3"><a class="text-light text-decoration-none" href="Manufacturing.html">MANUFACTURING</a></li>
-            <li class="ms-3 mb-md-0 me-md-3"><a class="text-light text-decoration-none" href="Contacts.html">CONTACTS</a></li>
+        <ul class="list-unstyled d-flex mb-0 list-unstyled d-flex flex-column flex-lg-row mb-0 align-items-end">
+            <li class="ms-3 mb-2 me-md-3"><a class="text-light text-decoration-none" href="Index.html">HOME</a></li>
+            <li class="ms-3 mb-2 me-md-3"><a class="text-light text-decoration-none" href="About.html">ABOUT</a></li>
+            <li class="ms-3 mb-2 me-md-3"><a class="text-light text-decoration-none" href="Products.html">PRODUCTS</a></li>
+            <li class="ms-3 mb-2 me-md-3"><a class="text-light text-decoration-none" href="Manufacturing.html">MANUFACTURING</a></li>
+            <li class="ms-3 mb-2 me-md-3"><a class="text-light text-decoration-none" href="Contacts.html">CONTACTS</a></li>
         </ul>
 
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
