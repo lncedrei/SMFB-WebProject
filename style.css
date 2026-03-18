@@ -54,11 +54,10 @@ section {
 
 .Introduction {
     width: 80%;
-    margin: 0 auto;
     height: 700px;
     align-content: center;
     justify-content: center;
-    background-color: #d4d4d4;
+    background-color: #e7e7e7;
     border-radius: 25px;
     display: grid;
     margin: 50px auto;
@@ -76,6 +75,10 @@ section {
     font-weight: 900;
     font-size: 1em;
     margin-top: 20px;
+}
+
+#IntroDesc {
+    margin: 0 30px;
 }
 
  #IntroImg img {
