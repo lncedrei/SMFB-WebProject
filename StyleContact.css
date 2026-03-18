@@ -156,7 +156,6 @@ body{
         max-width: 1300px;
         height: 800px;
         border-radius: 50px;
-        background-color: rgb(95, 0, 0);
         color: white;
         gap: 50px;
         border: 2px solid white;
@@ -171,7 +170,6 @@ body{
         margin: 40px;
         height: 720px;
         width: 100%;
-        background-color: rgb(110, 0, 0);
         color: rgb(255, 255, 255);
         
         font-weight: 600;
@@ -195,7 +193,6 @@ body{
 
     #phoneNumber, #firstName, #lastName, #email, #message {
         color: white;
-        background-color: rgb(110, 0, 0);
         border-color: transparent;
     }
 
@@ -212,7 +209,6 @@ body{
     }
 
     #submitMessage{
-        background-color: rgb(110, 0, 0);
         margin: 40px 0;
         border-radius: 100px;
         padding: 10px 50px;
