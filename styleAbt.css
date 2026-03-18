@@ -91,6 +91,7 @@ Section{
 }
 
 .card-header{
+    background-color: white;
     font-weight: 900;
     text-align: center;
     font-size: 20px;

@@ -9,12 +9,12 @@ nav h1 {
 }
 
 .navbar {
-    background: linear-gradient(90deg, #9B0F06, #9b10065b, #9B0F06);
+    background: linear-gradient(90deg, #990e05, #b112075b, #990e05);
     backdrop-filter: blur(10px);
 }
 
 .btn, .btn-secondary {
-    background-color: #740b03b0;
+    background-color: #b112075b;
     border-color: white;
     transition: all 0.3s ease-in-out;
     
@@ -22,7 +22,7 @@ nav h1 {
 
 .btn-secondary:hover {
     background-color: white;
-    color: #740a03;
+    color: #990e05;
     border-color: white;
 }
 
@@ -90,7 +90,7 @@ section {
     }
 
 #learnBtn {
-    background-color: #740a03;
+    background-color: #990e05;
 }
 
 #learnBtn:Hover {
@@ -154,7 +154,7 @@ section {
 }
 
 #prodMoreBtn, #ManuMoreBtn {
-    background-color: #740a03;
+    background-color: #990e05;
     text-align: center;
     display: flex;
     width: auto;
@@ -215,7 +215,7 @@ section {
 
 /*------------------------------------*/
 footer {
-    background: linear-gradient(90deg, #640a03, #9B0F06, #640a03);
+    background: linear-gradient(90deg, #990e05, #c71407, #990e05);
     font-size: 0.7em;
 }
 

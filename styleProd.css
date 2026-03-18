@@ -3,16 +3,16 @@
 
 .ProdHead{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 0 50px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
     margin-top: 60px;
     margin-bottom: 30px;
 }
 
 .ProdTitle{
     font-weight: 900;
-    color:#b80e02;
-    background-color: rgb(212, 212, 212);
+    color:#990e05;
+    background-color: rgb(230, 230, 230);
     width:fit-content;
     padding: 5px 40px ;
     border-radius: 100px;
@@ -27,8 +27,9 @@
 #SearchBar {
     border-radius: 40px;
     border-width: 1.5px;
+    max-width: 85%;
     padding: 0px 10px;
-    border-color: #b80e02;
+    border-color: #990e05;
 }
 
 #Prodlist {
@@ -44,13 +45,13 @@
 }
 
 .card-title {
-    color:#b80e02;
+    color:#990e05;
     font-weight: 900;
     font-size: 14px;
 }
 
 .card-footer{
-    background-color:  #b80e02;
+    background-color: #990e05;
     padding: 1px 0;
 }
 
@@ -60,7 +61,7 @@
     }
 
 #dropdownMart{
-    background-color: #b80e02;
+    background-color: #990e05;
     font-size: 20px;
     font-weight: 900;
 }
@@ -83,9 +84,9 @@
     }
 
     #SearchBar {
+        width: auto;
         border-radius: 40px;
         padding: 0px 40px;
-        border-color: #b80e02;
     }
 
     #Prodlist {
